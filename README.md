@@ -51,9 +51,9 @@ The `Parallax` component is the container component for the parallax. Its attrib
 - If scrolling is enabled
 - Spring configuration
 
-The `Parallax` component should be the container element for the entire page. Placing it among sibling elements will get you a double scroll bar.
+Note: the `Parallax` component should be the container element for the entire page. Placing it among sibling elements will get you a double scroll bar.
 
-The `ParallaxLayer` component represents a slide on the parallax. Its attributes define the parameters for how this slide and the children it contains moves within the parallax. The parameters include:
+The `ParallaxLayer` component represents a slide on the parallax and should be a child of the `Parallax` component. Its attributes define the parameters for how this slide and the children it contains moves within the parallax. The parameters include:
 - Offset from the top of the parallax
   - ie which page it is located within the parallax
 - Slide Speed
@@ -61,10 +61,25 @@ The `ParallaxLayer` component represents a slide on the parallax. Its attributes
   - default is that one page equals 100% of width/height
 
 
+**CSS Modules**
+
+I use CSS modules to style the components in this project. If you are unfamiliar with CSS modules, I'd check out [their website](https://github.com/css-modules/css-modules)! It's a good way to localize css to the component you want to apply it to. It also comes bundled with Gatsby.js.
+
+If you don't want to read into the documentation, it is pretty simple to understand.
+
+I define css classes and their styles in a `filename.module.css` file and import that file into the file my React component is defined in. When you import the `filename.module.css` file those styles are represented as an object.
+
+`import Styles from './vertical.module.css'`
+
+`<div className={Styles.className} />`
+
 ###### Vertical
 
 To get to the vertical example, go to http://react-spring.hackersupreme.com/parallax/vertical.
 
+I found the vertical parallax to benefit from scrolling being enabled. The scrolling showcases the fluidity of the spring-based parallax. Since the scrolling feels so natural and easy, the content of the page should reward that ease. 
+
+I spaced content out over 
 
 
 ## Resources
