@@ -9,7 +9,7 @@ Contents
 
 ## Overview
 
-(React-Spring)[https://www.react-spring.io/] is a spring based animation library in react.js. It comes with a hooks API and a render-props API. 
+[React-Spring](https://www.react-spring.io/) is a spring based animation library in react.js. It comes with a hooks API and a render-props API. 
 
 The spring-based physics of the library works really well with a parallax. The movement is very fluid and feels very natural. 
 
@@ -17,7 +17,7 @@ In the render-props API there are some parallax components to work with. This pr
 
 One example is a vertical parallax with an emphasis on story-telling. The other example is a horizontal parallax that simulates a more app-like feel.
 
-This is some example code from the (official documentation)[https://www.react-spring.io/docs/props/parallax].
+This is some example code from the [official documentation](https://www.react-spring.io/docs/props/parallax).
 ```
 <Parallax pages={3} scrolling={false} horizontal ref={ref => (this.parallax = ref)}>
   <ParallaxLayer offset={0} speed={0.5}>
@@ -33,11 +33,11 @@ http://react-spring.hackersupreme.com/parallax
 
 ## Installation
 
-These steps assume you have (Gatsby.js)[https://www.gatsbyjs.org/] and (Node.js)[https://nodejs.org/en/] installed on your computer.
+These steps assume you have [Gatsby.js](https://www.gatsbyjs.org/) and [Node.js](https://nodejs.org/en/) installed on your computer.
 
 1. Create local directory for the project to live in
 2. Download the files into that directory
-3. Use a (cli)[https://www.w3schools.com/whatis/whatis_cli.asp] and navigate into that directory
+3. Use a [cli](https://www.w3schools.com/whatis/whatis_cli.asp) and navigate into that directory
 4. Use `npm install` to download the necessary node modules
 5. Use `gatsby develop` to launch the server
 
