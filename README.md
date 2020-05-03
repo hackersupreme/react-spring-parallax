@@ -83,9 +83,13 @@ _filename.module.css_
 }
 ```
 _componentName.js_
-`import Styles from './filename.module.css'`
+```
+import Styles from './filename.module.css'
 
-`<div className={Styles.className} />`
+... 
+
+<div className={Styles.className} />
+```
 
 ###### Vertical
 
