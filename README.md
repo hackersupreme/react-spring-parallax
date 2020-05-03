@@ -5,6 +5,8 @@ Contents
 - Live Site
 - Installation
 - Documentation
+  - Vertical Parallax
+  - Horizontal Parallax
 - Resources / Contact Info
 
 ## Overview
@@ -91,14 +93,30 @@ import Styles from './filename.module.css'
 <div className={Styles.className} />
 ```
 
-###### Vertical
+## Vertical Parallax
 
 To get to the vertical example, go to http://react-spring.hackersupreme.com/parallax/vertical.
 
-I found the vertical parallax to benefit from scrolling being enabled. The scrolling showcases the fluidity of the spring-based parallax. Since the scrolling feels so natural and easy, the content of the page should reward that ease. 
+The code for the vertical parallax is in the `vertical.js` file in the `src/pages/` folder. The CSS for the vertical parallax is in the CSS modules file `vertical.module.css` located in the same folder.
 
-I spaced content out over 
+The vertical parallax benefits from scrolling being enabled. The fluidity of the spring-based parallax incentivises the user to scroll through content.
 
+To help the user you should avoid putting too much content in front of them at any one point. If they have to stop scrolling to absorb content, they lose out on the scrolling. 
+
+The content that takes advantage of those constraints is a story. It doesn't need to be word-based like my example. It can be purely graphics or image based like the [example](https://codesandbox.io/s/nwq4j1j6lm?from-embed) on React-Spring's website. All it needs is a hook, rising action, a climax, and a conclusion. 
+
+
+## Horizontal Parallax
+
+To get to the horizontal example, go to http://react-spring.hackersupreme.com/parallax/horizontal.
+
+The code for the horizontal parallax is in the `horizontal.js` file in the `src/pages/` folder. The CSS for the horizontal parallax is in the CSS modules file `horizontal.module.css` located in the same folder.
+
+Horizontal scrolling is somewhat frowned upon in web design, as the best [web designers](https://www.reddit.com/r/ProgrammerHumor/comments/2n8mw4/mrw_a_client_wants_a_horizontal_scrolling_website/) on the internet will tell you. 
+
+Thankfully, React-Spring allows you to disable scrolling on the parallax. But if you can't scroll, what's the point of a parallax? 
+
+The horizontal parallax that React-Spring offers has another use that allows you to create a more web app feel to your site. With the horizontal parallax you can simulate page transitions that feel incredibly smooth. 
 
 ## Resources
 
