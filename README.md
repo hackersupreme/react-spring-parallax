@@ -43,6 +43,22 @@ These steps assume you have [Gatsby.js](https://www.gatsbyjs.org/) and [Node.js]
 
 ## Documentation
 
+The library has two parallax components to work with, `Parallax` and `ParallaxLayer`. 
+
+The `Parallax` component is the container component for the parallax. Its attributes define the parameters for the parallax, such as:
+- How many pages there are 
+  - eg `pages={3}`
+- Whether it's horizontal or vertical
+  - `vertical`
+ 
+
+
+###### Vertical
+
+To get to the vertical example, go to http://react-spring.hackersupreme.com/parallax/vertical.
+
+
+
 ## Resources
 
 ###### Email
