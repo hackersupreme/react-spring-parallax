@@ -47,10 +47,18 @@ The library has two parallax components to work with, `Parallax` and `ParallaxLa
 
 The `Parallax` component is the container component for the parallax. Its attributes define the parameters for the parallax, such as:
 - How many pages there are 
-  - eg `pages={3}`
 - Whether it's horizontal or vertical
-  - `vertical`
- 
+- If scrolling is enabled
+- Spring configuration
+
+The `Parallax` component should be the container element for the entire page. Placing it among sibling elements will get you a double scroll bar.
+
+The `ParallaxLayer` component represents a slide on the parallax. Its attributes define the parameters for how this slide and the children it contains moves within the parallax. The parameters include:
+- Offset from the top of the parallax
+  - ie which page it is located within the parallax
+- Slide Speed
+- How the slide defines a page relative to the viewport
+  - default is that one page equals 100% of width/height
 
 
 ###### Vertical
