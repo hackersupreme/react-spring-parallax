@@ -45,6 +45,8 @@ These steps assume you have [Gatsby.js](https://www.gatsbyjs.org/) and [Node.js]
 
 The library has two parallax components to work with, `Parallax` and `ParallaxLayer`. 
 
+**Parallax**
+
 The `Parallax` component is the container component for the parallax. Its attributes define the parameters for the parallax, such as:
 - How many pages there are 
 - Whether it's horizontal or vertical
@@ -52,6 +54,9 @@ The `Parallax` component is the container component for the parallax. Its attrib
 - Spring configuration
 
 Note: the `Parallax` component should be the container element for the entire page. Placing it among sibling elements will get you a double scroll bar.
+
+
+**ParallaxLayer**
 
 The `ParallaxLayer` component represents a slide on the parallax and should be a child of the `Parallax` component. Its attributes define the parameters for how this slide and the children it contains moves within the parallax. The parameters include:
 - Offset from the top of the parallax
@@ -69,7 +74,16 @@ If you don't want to read into the documentation, it is pretty simple to underst
 
 I define css classes and their styles in a `filename.module.css` file and import that file into the file my React component is defined in. When you import the `filename.module.css` file those styles are represented as an object.
 
-`import Styles from './vertical.module.css'`
+For example:
+
+_filename.module.css_
+```
+.className {
+  background: red;
+}
+```
+_componentName.js_
+`import Styles from './filename.module.css'`
 
 `<div className={Styles.className} />`
 
