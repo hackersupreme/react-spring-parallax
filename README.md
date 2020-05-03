@@ -11,7 +11,7 @@ Contents
 
 ## Overview
 
-[React-Spring](https://www.react-spring.io/) is a spring based animation library in react.js. It comes with a hooks API and a render-props API. 
+[React-Spring](https://www.react-spring.io/) is a spring based animation library in [React.js](https://reactjs.org/). It comes with a hooks API and a render-props API. 
 
 The spring-based physics of the library works really well with a parallax. The movement is very fluid and feels very natural. 
 
@@ -64,6 +64,7 @@ The `ParallaxLayer` component represents a slide on the parallax and should be a
 - Offset from the top of the parallax
   - ie which page it is located within the parallax
 - Slide Speed
+  - can be positive or negative
 - How the slide defines a page relative to the viewport
   - default is that one page equals 100% of width/height
 
@@ -72,7 +73,7 @@ The `ParallaxLayer` component represents a slide on the parallax and should be a
 
 I use CSS modules to style the components in this project. If you are unfamiliar with CSS modules, I'd check out [their website](https://github.com/css-modules/css-modules)! It's a good way to localize css to the component you want to apply it to. It also comes bundled with Gatsby.js.
 
-If you don't want to read into the documentation, it is pretty simple to understand.
+If you don't want to read into the documentation, it's pretty simple to understand.
 
 I define css classes and their styles in a `filename.module.css` file and import that file into the file my React component is defined in. When you import the `filename.module.css` file those styles are represented as an object.
 
@@ -101,9 +102,13 @@ The code for the vertical parallax is in the `vertical.js` file in the `src/page
 
 The vertical parallax benefits from scrolling being enabled. The fluidity of the spring-based parallax incentivises the user to scroll through content.
 
-To help the user you should avoid putting too much content in front of them at any one point. If they have to stop scrolling to absorb content, they lose out on the scrolling. 
+To help the user you should avoid putting too much content in front of them at any one point. If they have to stop scrolling to absorb content, they lose out on the scrolling, which, in that moment in time, represents the only joy in that user's life. Do not destroy joy with ill-fitting content.
 
 The content that takes advantage of those constraints is a story. It doesn't need to be word-based like my example. It can be purely graphics or image based like the [example](https://codesandbox.io/s/nwq4j1j6lm?from-embed) on React-Spring's website. All it needs is a hook, rising action, a climax, and a conclusion. 
+
+Choosing your words, images, and other graphics carefully will be the challenge. Too much and you'll mess with the flow of the page. Too little though and you won't have made a point. It's a balancing act.
+
+Although I'm not a designer, I'm a developer, so take this with a grain of salt.
 
 
 ## Horizontal Parallax
@@ -116,7 +121,11 @@ Horizontal scrolling is somewhat frowned upon in web design, as the best [web de
 
 Thankfully, React-Spring allows you to disable scrolling on the parallax. But if you can't scroll, what's the point of a parallax? 
 
-The horizontal parallax that React-Spring offers has another use that allows you to create a more web app feel to your site. With the horizontal parallax you can simulate page transitions that feel incredibly smooth. 
+The horizontal parallax that React-Spring offers has another use that allows you to create a more app-like feel to your site. With the horizontal parallax you can simulate page transitions that feel incredibly smooth. 
+
+The same content that can be fit on a powerpoint works here. It can be a story like the vertical example emphasized, but since the content is locked into place after the animation takes place you can add more detailed content.
+
+I decided it would work as an interactive slideshow that features similar content. I imagined this would replace an "about us" page or a "products" page. Content that's all of the same type, i.e. an image, title, subtitle, and paragraph, but the content differs from instance to instance.
 
 ## Resources
 
@@ -130,5 +139,11 @@ http://hackersupreme.com
 
 ###### Resources
 
-
+- [Gatsby.js](https://www.gatsbyjs.org/)
+- [React.js](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [React-Spring Documentation](https://www.react-spring.io)
+- [React-Spring Parallax Documentation](https://www.react-spring.io/docs/props/parallax)
+- [React-Spring Parallax CodeSandbox Example](https://codesandbox.io/s/nwq4j1j6lm?from-embed)
+- [CSS Modules](https://github.com/css-modules/css-modules)
 
