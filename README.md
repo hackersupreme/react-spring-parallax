@@ -31,7 +31,7 @@ Check out the live site or download the files and host them on a local server to
 
 ## Live Site
 
-http://react-spring.hackersupreme.com/parallax
+http://react-spring.hackersupreme.com/
 
 ## Installation
 
